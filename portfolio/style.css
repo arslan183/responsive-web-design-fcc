@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding-top: 12vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar{
+background-color: #E2C2C6;
+width: 100%;
+height: 12vh;
+padding-right: 55px;
+display: flex;
+justify-content: end;
+align-items: center;
+position:fixed;
+top:0;
+left: 0;
+z-index: 1000;
+
+}
+#navbar a{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    height: 12vh;
+    width: 120px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+#welcome-section{
+    height: 100vh;
+    background-color:#2F0147;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 32vh;
+    margin: 0;
+}
+#heading-1{
+    color:white;
+    font-size: 50px;
+   font-weight: bolder;
+    margin-bottom: 10px;
+}
+#para-1{
+    color:white;
+   font-family: cursive;
+   font-size: 20px;
+}
+#navbar a:hover{
+background-color:#9C528B;
+color: white;
+}
+#projects{
+    background-color: #9C528B;
+    
+}
+.title-project{
+    margin: 0;
+    height: 120px;
+    padding-top: 38px;
+    text-align: center;
+    color: white;
+    font-size:40px ;
+}
+.project-tile{
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    
+}
+.project-img1{
+    padding-left: 30px;
+  
+   
+}
+.project-img2{
+    padding-right: 30px;
+}
+.project-img1 p{
+    text-align: center;
+    color:white;
+    height: 50px;
+    background-color: #2F0147;
+    margin: 0;
+    padding-top: 17px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.project-img2 p{
+    text-align: center;
+    color:white;
+     height: 50px;
+    background-color: #2F0147;
+    margin: 0;
+    padding-top: 17px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#profile img{
+    height: 70px;
+    width: 70px;
+    
+}
+#profile{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#profile p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  nav#navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  #welcome-section {
+    padding: 30px 10px;
+  }
+
+  .project-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .project-tile {
+    width: 90%;
+  }
+
+  .project-tile img {
+    width: 100%;
+  }
+
+  #contacts {
+    padding: 20px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .project-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .project-tile {
+    width: 45%;
+  }
+}
+
+
+
+
